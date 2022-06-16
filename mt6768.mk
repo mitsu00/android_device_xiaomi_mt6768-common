@@ -106,6 +106,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MusicPrebuilt
 
+# KProfiles
+PRODUCT_PACKAGES += \
+    KProfiles
 
 # Camera
 PRODUCT_PACKAGES += \
