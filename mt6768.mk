@@ -407,10 +407,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, vendor/xiaomi/mt6768-common/mt6768-common-vendor.mk)
 
 # Speed profile services and wifi-service to reduce RAM and storage
-PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
-
-# Speed profile services and wifi-service to reduce RAM and storage.
-PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := everything
 
 # Always preopt extracted APKs to prevent extracting out of the APK for gms
 # modules.
