@@ -79,11 +79,19 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6768
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := latest
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_KERNEL_CLANG_VERSION := r487747c
 KERNEL_CLANG_TRIPLE := CLANG_TRIPLE=aarch64-linux-gnu-
-TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" \
+    LLVM=1 \
+    LLVM_IAS=1 \
+    AS=llvm-as \
+    AR=llvm-ar \
+    NM=llvm-nm \
+    OBJCOPY=llvm-objcopy \
+    OBJDUMP=llvm-objdump \
+    STRIP=llvm-strip
+KERNEL_LD := LD=ld.lld
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
