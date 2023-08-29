@@ -78,6 +78,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GCamPrebuilt
 
+# Add Prebuilt Retro Music
+PRODUCT_PACKAGES += \
+    MusicPrebuilt
+
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
