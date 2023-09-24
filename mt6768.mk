@@ -74,14 +74,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
-# Add GCam 8.1
-PRODUCT_PACKAGES += \
-    GCamPrebuilt
-
 # Add Prebuilt Retro Music
 PRODUCT_PACKAGES += \
     MusicPrebuilt
-
 
 # Camera
 PRODUCT_PACKAGES += \
