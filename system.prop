@@ -28,6 +28,11 @@ config.svi.xml.print=1
 # FM Radio
 persist.internalAntenna.enable=true
 
+# Fling
+ro.min.fling_velocity=160 
+ro.max.fling_velocity=20000
+ro.max.fling_velocity=20000
+
 # FS-verity
 ro.apk_verity.mode=2
 
