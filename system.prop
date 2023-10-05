@@ -56,6 +56,14 @@ persist.sys.mdlog_dumpback=2
 # MIUI
 persist.miui.extm.enable=1
 
+# LMK tuning
+ro.lmk.filecache_min_kb=153600
+ro.lmk.stall_limit_critical=40
+
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=false
+
 # Perf
 ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
