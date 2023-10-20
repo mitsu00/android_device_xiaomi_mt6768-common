@@ -922,6 +922,12 @@ on boot
 
     chown system system /sys/class/thermal/thermal_message/sconfig
 
+    # Allow system to manipulate KProfiles modes and parameters
+    chown system system /sys/module/kprofiles/parameters/auto_kp
+    chmod 0660 /sys/module/kprofiles/parameters/auto_kp
+    chown system system /sys/kernel/kprofiles/kp_mode
+    chmod 0660 /sys/kernel/kprofiles/kp_mode
+
     # DT2W
     chown system system /sys/touchpanel/double_tap
     chmod 0660 /sys/touchpanel/double_tap
