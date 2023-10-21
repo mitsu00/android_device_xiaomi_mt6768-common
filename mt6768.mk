@@ -98,17 +98,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
-# Add GCam 8.1
-PRODUCT_PACKAGES += \
-    GCamPrebuilt
-
 # Add Prebuilt Retro Music
 PRODUCT_PACKAGES += \
     MusicPrebuilt
 
-# KProfiles
-PRODUCT_PACKAGES += \
-    KProfiles
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -445,9 +438,6 @@ PRODUCT_PACKAGES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
-
-# ViPER4AndroidFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
