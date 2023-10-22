@@ -412,13 +412,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsensorndkbridge
 
-# Shims
-PRODUCT_PACKAGES += \
-    libshim_audio \
-    libshim_beanpod \
-    libshim_vtservice \
-    libpiex_shim
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     packages/modules/Bluetooth/android/app \
