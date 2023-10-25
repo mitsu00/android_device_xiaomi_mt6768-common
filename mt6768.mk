@@ -18,9 +18,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio.service.mediatek \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio-service \
+    android.hardware.audio-impl \
+    android.hardware.audio.effect-impl \
     android.hardware.bluetooth.audio-impl
 
 PRODUCT_PACKAGES += \
@@ -285,7 +285,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.1-service.mt6768
+    android.hardware.usb-service
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
